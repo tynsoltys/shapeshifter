@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Shapeshifter</title>
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans|Raleway|Montserrat|Oswald' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="styles/style.css">
+
+</head>
+
+<body>
+
+<div class="header" id="header">
+	<div id="logo1"></div>
+		<h1>shapeshifter.js</h1>
+	</div>
+	<h2>a simple svg shape maker</h2>
+</div>
+
+<section class="intro" id="intro">
+	<div class="description">
+		<p class="intro">Shapeshifter.js allows you to easily convert divs into simple and fun SVG shapes!</p>
+		<p>Customize your name with the following options:</p>
+
+	</div>
+
+	<div class="linkBoxes" class="navigation">
+		<div><a href="#shapes">shapes</a></div>|
+		<div><a href="#sizes">sizing</a></div>|
+		<div><a href="#fills">fills</a></div>|
+		<div><a href="#rotations">rotations</a></div>
+	</div>
+	
+<div class="buttonBoxes">
+	<div class="buttonBox">
+		<div id="status">
+			<a href="#">Status</a>
+		</div>
+	</div>
+	<div class="buttonBox">
+		<div id="download">
+			<a href="#">Download</a>
+		</div>
+	</div>
+	<div class="buttonBox">
+		<div id="docs">
+			<a href="#">docs</a>
+		</div>
+	</div>
+</div>
+
+</section>
+
+<section class="shapes" id="shapes">
+	<h3>shapes</h3>
+	<div class="shapesBox">
+		<div class="shapeBox">
+			<div id="shape1"></div>
+			<p>hexagon</p>
+		</div>
+		<div class="shapeBox">
+			<div id="shape2"></div>
+			<p>star</p>
+		</div>
+		<div class="shapeBox">
+			<div id="shape3"></div>
+			<p>pentagon</p>
+		</div>
+		<div class="shapeBox">
+			<div id="shape4"></div>
+			<p>eqTriangle</p>
+		</div>
+		<div class="shapeBox">
+			<div id="shape5"></div>
+			<p>rectangle</p>
+		</div>
+		<div class="shapeBox">
+			<div id="shape6"></div>
+			<p>rhombus</p>
+		</div>
+		<div class="shapeBox">
+			<div id="shape7"></div>
+			<p>heptagon</p>
+		</div>
+		<div class="shapeBox">
+			<div id="shape8"></div>
+			<p>octogon</p>
+		</div>
+		<div class="shapeBox">
+			<div id="shape9"></div>
+			<p>nonagon</p>
+		</div>
+		<div class="shapeBox">
+			<div id="shape10"></div>
+			<p>decagon</p>
+		</div>
+		<div class="shapeBox">
+			<div id="shape11"></div>
+			<p>leftChevron</p>
+		</div>
+		<div class="shapeBox">
+			<div id="shape12"></div>
+			<p>rightChevron</p>
+		</div>
+		<div class="shapeBox">
+			<div id="shape13"></div>
+			<p>message</p>
+		</div>
+		<div class="shapeBox">
+			<div id="shape14"></div>
+			<p>rTriangleLeft</p>
+		</div>
+		<div class="shapeBox">
+			<div id="shape15"></div>
+			<p>rTriangleRight</p>
+		</div>
+	</div>
+	<p class="intro">use any of the above <span class="value">shape names</span> in the <span class="property">shape</span> property.</p>
+</section>
+
+<section class="sizing" id="sizing">
+	<h3>sizing</h3>
+
+<div class="sizingBoxes">
+	<div class="sizingBox">
+		<div id="sizeBox1">
+		</div>
+		<p class="multiplier">0.5</p>
+	</div>
+	<div class="sizingBox">
+		<div id="sizeBox2">
+		</div>
+		<p class="multiplier">1</p>
+	</div>
+	<div class="sizingBox">
+		<div id="sizeBox3">
+		</div>
+		<p class="multiplier">2</p>
+	</div>
+	<div class="sizingBox">
+		<div id="sizeBox4">
+		</div>
+		<p class="multiplier">3</p>
+	</div>
+</div>
+
+<p class="intro">At the default <span class="property">multiplier</span> value of <span class="value"> 1</span>, shapes are <span class="gray">100px x 100px</span>. Change the value to change the size!</p>
+
+</section>
+
+<section class="fills" id="fills">
+	<h3>fills</h3>
+
+	<div class="fillsBoxes">
+		<div class="fillBox">
+			<div id="fill1"></div>
+			<p>solid colour</p>
+		</div>
+		<div class="fillBox">
+			<div id="fill2"></div>
+			<p>static image</p>
+		</div>
+		<div class="fillBox">
+			<div id="fill3"></div>
+			<p>animated .gif</p>
+		</div>
+	</div>
+
+	<p class="intro">Set the <span class="property">fill</span> to any hex, rgb, or other standard CSS colour value for a solid colour. To use an image or a .gif, pass the <span class="value"> file path </span> relative to the main page in the <span class="property">fillImage</span> option to use either! <span class="gray"> Note: fillImage will override any fill. So simply don't include it if you want to use a plain colour fill!</span></p> 
+
+</section>
+
+<section class="rotation" id="rotation">
+	<h3>rotation</h3>
+	
+	<div class="rotationBoxes">
+		<div class="rotationBox">
+			<div id="rotation1">
+				<p>rotation only</p>
+			</div>
+		</div>
+		<div class="rotationBox">
+			<div id="rotation2">
+				<p>rotationOffset</p>
+			</div>
+		</div>
+		<div class="rotationBox">
+			<div id="rotation3">
+				<p>180 degrees + rotationOffset</p>
+			</div>
+		</div>
+	</div>
+
+	<p class="intro">Rotate the shape using the <span class="rotation"> rotation </span> option, and passing <span class="value">degrees </span> to it as a number. To offset the text (make it horizontal again), set the <span class="property"> rotationOffset </span> to <span class="value">"true"</span>. <span class="gray">(Yes, in a string.)</span></p> 
+
+</section>
+
+<section class="footer" id="about">
+	<h3>More Info</h3>
+		<div class="description">
+		<p class="intro">Version 1.01 released May 24th, 2015.</p>
+		<h4>Planned updates:</h4>
+			<p class="update">New shapes</p>
+			<p class="update">Better preserve aspect ratio of background images</p>
+			<p class="update">Respond to path co-ordinates</p>
+			<p class="update">Add drop shadow and other svg filter effects</p>
+			<p class="update">Add simple animations and transition effects</p>
+		<p class="intro">This plugin was lovingly created by <a href="www.tynsoltys.com">Tyn Soltys</a>.</p>
+	</div>
+</section>
+
+
+<div id="party1">
+</div>
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="scripts/shapeshifter.js"></script>
+<script src="scripts/main.js"></script>
+
+</html>
