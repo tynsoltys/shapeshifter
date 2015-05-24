@@ -224,28 +224,14 @@ $('#logo1').shapeshifter({
 		rotationOffset: "true"
 	});
 
-	// $('#triList li div').shapeshifter({
-	// 	shape: "eqTriangle",
-	// 	fill: "#4CAF50",
-	// 	multiplier: 1,
-	// 	rotation: 0
-	// });
+// ADDING SOME ANIMATIONS 
 
-	// $('#triList li:even div').shapeshifter({
-	// 	shape: "eqTriangle",
-	// 	fill: "#8BC34A",
-	// 	multiplier: 1,
-	// 	rotation: 180,
-	// 	rotationOffset: true
+// $('.buttonBox div a').on('mouseover', function(){
+// 	$(this).parent().toggleClass("bigger");
+// });
 
-	// });
 
-	// $('#triList2').shapeshifter({
-	// 	shape: "eqTriangle",
-	// 	fill: "hotpink",
-	// 	multiplier: 1,
-	// 	rotation: 0
-	// });
+
 
 });
 

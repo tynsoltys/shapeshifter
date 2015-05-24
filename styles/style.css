@@ -138,6 +138,11 @@ section.rotation {
 	padding:100px auto;
 }
 
+section.footer {
+	background-color: #00796B;
+	padding:100px auto;
+}
+
 /*SHAPES BOX STYLES*/
 
 .shapesBox, .sizingBoxes, .buttonBoxes, .fillsBoxes, .rotationBoxes, .linkBoxes {
@@ -164,10 +169,20 @@ div.buttonBox {
 	flex:1 0 auto;
 	max-width: 250px;
 	text-align: center;
+	transition: all 0.5s;
 }
 
 div.buttonBox div {
 	margin:0 auto;
+	transition: all 0.5s;
+}
+
+div.buttonBox div:hover {
+	transform: scale(1.2);
+}
+
+.bigger {
+	transform: scale(1.2);
 }
 
 div#status a, div#download a, div#docs a {
@@ -175,6 +190,16 @@ div#status a, div#download a, div#docs a {
 	text-transform: uppercase;
 	font-family: "montserrat";
 	text-decoration: none;
+	transition:all 0.5s;
+}
+
+div#status:hover, div#download:hover, div#docs:hover {
+	transform: scale(1.2);
+}
+
+div#status a:hover, div#download a:hover, div#docs a:hover {
+	font-size: 21px;
+	border-bottom:none;
 }
 
 div#status {
@@ -210,6 +235,11 @@ div#docs a {
 	font-family: "montserrat";
 	font-size: 30px;
 	letter-spacing: 2px;
+	transition: all 0.5s ease-in-out;
+}
+
+.linkBoxes div a:hover {
+	transform: scale(1.05);
 }
 
 
