@@ -30,26 +30,27 @@ h1 {
 	margin:0 auto;
 	text-transform: uppercase;
 	font-size: 20px;
-	line-height: 250px;
+	line-height: 270px;
 	letter-spacing: 5px;
 	display: block;
 	background-color: rgba(255,255,255,0.0);
 	border-radius: 50%;
-	width: 280px;
+	width: 295px;
 	height: 250px;
 	position: absolute;
 	left: 0;
 	right: 0;
-	top: 75px;
+	top: 80px;
 	text-align: center;
 	font-family: "Montserrat", Helvetica, sans-serif;
 }
 
 h2 {
-	padding-top: 30px;
+	padding-top: 50px;
 	color:#FFA000;
+	margin: 0 auto;
 	letter-spacing: 3px;
-	font-size: 25px;
+	font-size: 30px;
 	text-align: center;
 	font-family: "Montserrat", Helvetica, sans-serif;
 	text-transform: uppercase;
@@ -96,6 +97,18 @@ p.intro {
 	margin: 0 auto;
 }
 
+section.intro p.intro {
+	padding-bottom: 20px;
+}
+
+p.instruction {
+	max-width: 800px;
+	font-size: 20px;
+	text-align: center;
+	margin: 0 auto;
+	padding-bottom: 100px;
+}
+
 p.update {
 	color:#FFC107;
 	font-size: 20px;
@@ -114,6 +127,11 @@ a:hover {
 
 section {
 	padding:100px auto;
+}
+
+div.header {
+	background-color: #3F51B5;
+	padding:50px;
 }
 
 section.shapes {
@@ -161,8 +179,14 @@ section.footer {
 	padding-bottom: 0px;
 }
 
+div.codeBlock {
+	max-width:800px;
+	margin: 0 auto;
+}
+
 div.buttonBoxes {
-	margin:70px auto 140px auto;
+	margin:0px auto 30px;
+	padding-top: 0;
 }
 
 div.buttonBox {
@@ -181,9 +205,15 @@ div.buttonBox div:hover {
 	transform: scale(1.2);
 }
 
-.bigger {
-	transform: scale(1.2);
+pre {
+	max-width: 600px;
+	margin:0 auto;
+	text-align: left;
 }
+
+/*.bigger {
+	transform: scale(1.2);
+}*/
 
 div#status a, div#download a, div#docs a {
 	color:white;
@@ -225,9 +255,11 @@ div#docs a {
 	padding-left: 30px;
 }
 
+.linkBoxes {
+	padding-bottom: 100px;
+}
 .linkBoxes div {
 	flex:1 0 auto;
-	padding:20px;
 }
 
 .linkBoxes div a {

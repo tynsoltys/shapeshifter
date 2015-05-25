@@ -22,9 +22,45 @@
 <section class="intro" id="intro">
 	<div class="description">
 		<p class="intro">Shapeshifter.js allows you to easily convert divs into simple and fun SVG shapes!</p>
-		<p>Customize your name with the following options:</p>
+
+		<div class="buttonBoxes">
+			<div class="buttonBox">
+				<div id="status">
+					<a href="#about">info</a>
+				</div>
+			</div>
+			<div class="buttonBox">
+				<div id="download">
+					<a target="_blank" href="https://github.com/tynsoltys/shapeshifter">Download</a>
+				</div>
+			</div>
+			<div class="buttonBox">
+				<div id="docs">
+					<a target="_blank" href="https://github.com/tynsoltys/shapeshifter">docs</a>
+				</div>
+			</div>
+		</div>
+
+		<p>Customize your shape simply by passing a few options into the shapeshifter function:</p>
 
 	</div>
+	<div class="codeBlock">
+
+		<pre>
+		<code>
+	 $('#div').shapeshifter({
+	    	shape: "hexagon",
+	    	fill: "#303F9F",
+	    	fillImage: "images/image.gif",
+	    	multiplier: 2,
+	    	rotation: -30,
+	    	rotationOffset: "true"
+	    });
+	   </code></pre>
+
+	</div>
+	
+	<p class="intro">View examples of the options below:</p>
 
 	<div class="linkBoxes" class="navigation">
 		<div><a href="#shapes">shapes</a></div>|
@@ -32,24 +68,19 @@
 		<div><a href="#fills">fills</a></div>|
 		<div><a href="#rotations">rotations</a></div>
 	</div>
-	
-<div class="buttonBoxes">
-	<div class="buttonBox">
-		<div id="status">
-			<a href="#about">info</a>
-		</div>
-	</div>
-	<div class="buttonBox">
-		<div id="download">
-			<a target="_blank" href="https://github.com/tynsoltys/shapeshifter">Download</a>
-		</div>
-	</div>
-	<div class="buttonBox">
-		<div id="docs">
-			<a target="_blank" href="https://github.com/tynsoltys/shapeshifter">docs</a>
-		</div>
-	</div>
-</div>
+
+
+<!-- Shapeshifter.js is really easy to use!
+
+1. Download shapeshifter.js and place it in your scripts folder.
+2. Call jQuery and the shapeshifter.js file on each page you'd like to use it.
+3. Assign a unique id to the div you'd like to shapeshift in your HTML.
+
+	* _Divs work best, although other elements can be shifted too._
+ 	* _Something about classes._
+ 	
+4. In your main.js file (or in script tags), run the function .shapeshift() on the div you'd like to shapeshift, and pass the *options* object into the function. The code below includes all possible options *in this version* ;)  -->
+
 
 </section>
 
@@ -117,7 +148,8 @@
 			<p>rTriangleRight</p>
 		</div>
 	</div>
-	<p class="intro">use any of the above <span class="value">shape names</span> in the <span class="property">shape</span> property.</p>
+	<p class="intro">shape:"hexagon" <span class="property">(required)</span></p>
+	<p class="instruction">Pass in any of the above shapes to generate your shape.</p>
 </section>
 
 <section class="sizing" id="sizes">
@@ -146,8 +178,8 @@
 	</div>
 </div>
 
-<p class="intro">At the default <span class="property">multiplier</span> value of <span class="value"> 1</span>, shapes are <span class="gray">100px x 100px</span>. Change the value to change the size!</p>
-
+<p class="intro">multiplier: 2</p>
+<p class="instruction">Standard shapes are 100px x 100px. Size them by changing the multiplier value.</p>
 </section>
 
 <section class="fills" id="fills">
@@ -168,7 +200,11 @@
 		</div>
 	</div>
 
-	<p class="intro">Set the <span class="property">fill</span> to any hex, rgb, or other standard CSS colour value for a solid colour. To use an image or a .gif, pass the <span class="value"> file path </span> relative to the main page in the <span class="property">fillImage</span> option to use either! <span class="gray"> Note: fillImage will override any fill. So simply don't include it if you want to use a plain colour fill!</span></p> 
+	<p class="intro">fill: "#FF5722"</p>
+	<p class="instruction">Input a color value to fill with a solid colour.</p>
+
+	<p class="intro">fillImage: "images/image.gif"</p>
+	<p class="instruction">Input the image path <em>relative to the div </em> to change the fill of the shape to an image - even an animated .gif! Note that fillImage will override a fill colour, so simply don't include it if you'd like to use a plain colour.</p>
 
 </section>
 
@@ -193,7 +229,11 @@
 		</div>
 	</div>
 
-	<p class="intro">Rotate the shape using the <span class="rotation"> rotation </span> option, and passing <span class="value">degrees </span> to it as a number. To offset the text (make it horizontal again), set the <span class="property"> rotationOffset </span> to <span class="value">"true"</span>. <span class="gray">(Yes, in a string.)</span></p> 
+	<p class="intro">rotation: -30</p>
+	<p class="instruction">Input a value in degrees to rotate the shape</p>
+
+	<p class="intro">rotationOffset: "true"</p>
+	<p class="instruction">Set to a string of "true" to set the contents of the div back to plain ol' horizontal.</p>
 
 </section>
 

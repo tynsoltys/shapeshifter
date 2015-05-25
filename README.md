@@ -22,7 +22,7 @@ Shapeshifter.js is really easy to use!
 	    	rotation: -30,
 	    	rotationOffset: "true"
 	    });
-5. Re: the children of your shape, 
+
 
 ###Options
 #####1. shape:"hexagon" _(required)_
