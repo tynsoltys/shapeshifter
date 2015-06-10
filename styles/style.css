@@ -247,9 +247,9 @@ div#docs a {
   transform: scale(1.05); }
 
 .shapeBox {
-  -webkit-flex: 1 0 18%;
-  -ms-flex: 1 0 18%;
-  flex: 1 0 18%;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
   display: block;
   min-width: 144px;
   margin: 1%;
@@ -311,7 +311,6 @@ p.multiplier {
   font-size: 20px;
   z-index: 5; }
 
-list of
 ul {
   list-style-type: none;
   width: 125%;
